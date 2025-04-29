@@ -8,27 +8,64 @@ body {
 .header {
     background-color: #1E2A38;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     height: 50px;
-    border: 2px solid;
     padding: 0 180px;
 }
 
+.logo {
+    margin-right: auto;
+}
 
-
-.header-l {
+.header-links {
     display: flex;
     list-style-type: none;
     gap: 20px;
     font-size: 18px;
 }
 
-.header-links {
+.header-links a {
     text-decoration: none;
     color: white;
 }
 
-.header-links:hover {
+.header-links a:hover {
     color: #2DD4BF;
+}
+
+.hero {
+    display: flex;
+    background-color: #1E2A38;
+    padding: 100px 180px;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #FFFFFF;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.hero button {
+    background-color: #4AA8E6;
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.hero button:hover {
+    background-color: #3C93C7;
+    cursor: grab;
+}
+
+.hero-left, .hero-img {
+    flex: 1;
 }
