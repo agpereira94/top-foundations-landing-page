@@ -94,7 +94,7 @@ body {
 }
 
 .info h2 {
-    margin-bottom: 80px;
+    margin-bottom: 60px;
     font-size: 36px;
     font-weight: 900;
 }
@@ -103,21 +103,32 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 100px;
+    gap: 50px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 150px;
+    width: 200px;
     height: 300px;
+    overflow: hidden;
 }
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    cursor: pointer;
+  }
 
 .card-img {
     border: 6px solid #4AA8E6;
     border-radius: 12px;
     padding: 16px;
+    max-width: 100px;
 }
 
 .card p {
@@ -133,7 +144,7 @@ body {
     align-items: center;
     padding: 100px 320px;
     background-color: #E9EEF3;
-    gap: 8px
+    gap: 8px;
     flex: 1;
 }
 
